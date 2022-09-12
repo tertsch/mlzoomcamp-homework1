@@ -1,3 +1,7 @@
 import numpy as np
+import pandas
 
-print(np.__version__)
+print("Question 1: " + np.__version__)
+
+pandas.read_csv("data.csv")
+
