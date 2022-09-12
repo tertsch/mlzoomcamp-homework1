@@ -12,3 +12,6 @@ top3 = value_counts.head(3)
 names = top3.keys().tolist()
 
 print("Question 3:", ", ".join(names))
+
+audis = data[data['Make'] == "Audi"]
+print(audis["Model"].nunique())
