@@ -39,4 +39,6 @@ engines = lotus[["Engine HP", "Engine Cylinders"]]
 
 unique = engines.drop_duplicates()
 X = unique.to_numpy()
-print(X)
+
+XTX = np.matmul(X, X.T)
+print(XTX)
