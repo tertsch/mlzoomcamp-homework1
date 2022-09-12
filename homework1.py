@@ -32,3 +32,11 @@ if filled.median() == df["Engine Cylinders"].median():
     print("Question 6: NO")
 else:
     print("Question 6: YES")
+
+lotus = df[df["Make"] == "Lotus"]
+
+engines = lotus[["Engine HP", "Engine Cylinders"]]
+
+unique = engines.drop_duplicates()
+X = unique.to_numpy()
+print(X)
